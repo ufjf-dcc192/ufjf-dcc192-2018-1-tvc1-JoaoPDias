@@ -20,6 +20,7 @@ public class AnfitriaoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if ("/cadastrar-anfitriao.html".equals(request.getServletPath())) {
+            response.setContentType("text/html;charset=UTF-8");
             RequestDispatcher despachante = request.getRequestDispatcher("/WEB-INF/cadastrar-anfitriao.jsp");
             despachante.forward(request, response);
         }
@@ -27,6 +28,7 @@ public class AnfitriaoServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
         Integer id = Anfitriao.getAnfitrioes().size();
         String nome = request.getParameter("nome");
         String categoria = request.getParameter("categoria");

@@ -24,9 +24,11 @@ public class EstrangeiroServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if ("/cadastrar-estrangeiro.html".equals(request.getServletPath())) {
+            response.setContentType("text/html;charset=UTF-8");
             RequestDispatcher despachante = request.getRequestDispatcher("/WEB-INF/cadastrar-estrangeiro.jsp");
             despachante.forward(request, response);
         } else if ("/consulta-disponibilidade.html".equals(request.getServletPath())) {
+            response.setContentType("text/html;charset=UTF-8");
             Integer cod = Integer.parseInt(request.getParameter("est"));
             Estrangeiro estrangeiro = Estrangeiro.getEstrangeiros().get(cod);
             List<Anfitriao> disponiveis = estrangeiro.getAnfitrioesDisponiveis();
@@ -39,6 +41,7 @@ public class EstrangeiroServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
         Integer id = Estrangeiro.getEstrangeiros().size();
         String nome = request.getParameter("nome");
         String pais = request.getParameter("pais");
