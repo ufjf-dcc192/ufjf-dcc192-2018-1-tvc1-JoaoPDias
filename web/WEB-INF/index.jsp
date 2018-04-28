@@ -10,5 +10,6 @@
     </head>
     <body>
         <%@include file="jspf/navbar.jspf" %>
+        <img src="icone/handshake.jpg" class="img-fluid rounded mx-auto d-block" alt="Aperto de mão">
     </body>
 </html>
