@@ -9,6 +9,6 @@
         <%@include file="jspf/head.jspf"  %>
     </head>
     <body>
-
+        <%@include file="jspf/navbar.jspf" %>
     </body>
 </html>
