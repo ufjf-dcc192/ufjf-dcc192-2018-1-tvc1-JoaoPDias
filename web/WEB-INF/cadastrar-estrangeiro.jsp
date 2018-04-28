@@ -4,12 +4,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Adicionar Estrangeiro</title>
+        <title>Adicionar Intercambista</title>
         <%@include file="jspf/head.jspf" %>
     </head>
     <body>
         <%@include file="jspf/navbar.jspf" %>
-        <h1>Adicionar Estrangeiro</h1>
+        <h1>Adicionar Intercambista</h1>
         <form method="post">
             <div class="form-group">
                 <label for="nome">Nome</label>

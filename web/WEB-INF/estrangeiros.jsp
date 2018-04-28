@@ -7,12 +7,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lista de Estrangeiros</title>
+        <title>Lista de Intercambistas</title>
         <%@include file="jspf/head.jspf" %>
     </head>
     <body>
         <%@include file="jspf/navbar.jspf" %>
-        <h1>Lista de Estrangeiros</h1>
+        <h1>Lista de Intercambistas</h1>
         <table class="table bg-dark text-white">
             <thead>
             <th>ID</th>

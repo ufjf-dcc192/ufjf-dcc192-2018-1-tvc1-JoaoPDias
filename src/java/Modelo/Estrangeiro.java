@@ -69,7 +69,7 @@ public class Estrangeiro {
         if (estrangeiros == null) {
             estrangeiros = new ArrayList<>();
             for (int i = 0; i < 4; i++) {
-                estrangeiros.add(new Estrangeiro(i,"Estrangeiro " + i, "País " + i, "Cidade " + i, LocalDate.now().plusDays(i), LocalDate.now().plusMonths(i+1*3)));
+                estrangeiros.add(new Estrangeiro(i,"Intercambista " + i, "País " + i, "Cidade " + i, LocalDate.now().plusDays(i), LocalDate.now().plusMonths(i+1*3)));
             }
 
         }
